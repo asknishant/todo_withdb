@@ -1,0 +1,14 @@
+server:
+  port: 8282
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver #In prod use postgres
+    url: jdbc:h2:file:./todos;DB_CLOSE_DELAY=-1
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format-sql: true
