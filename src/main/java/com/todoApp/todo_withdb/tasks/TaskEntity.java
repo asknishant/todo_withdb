@@ -3,16 +3,14 @@ package com.todoApp.todo_withdb.tasks;
 import com.todoApp.todo_withdb.common.BaseEntity;
 import com.todoApp.todo_withdb.notes.NoteEntity;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 import java.util.Date;
 import java.util.List;
 
 @Entity(name = "tasks") // this means that we are telling spring that this is a table so then thsi calss asks for PK.
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString

@@ -1,9 +1,8 @@
 server:
   port: 8282
-
 spring:
   datasource:
-    driver-class-name: org.h2.Driver #In prod use postgres
+    driver-class-name: org.h2.Driver # In production use Postgres
     url: jdbc:h2:file:./todos;DB_CLOSE_DELAY=-1
   jpa:
     hibernate:
@@ -11,4 +10,4 @@ spring:
     show-sql: true
     properties:
       hibernate:
-        format-sql: true
+        format_sql: true
